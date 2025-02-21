@@ -221,7 +221,7 @@ class ContractController extends Controller
                     && !$contract->inactive
                     && is_null($contract->return_trans_id)
                     && !is_null($contract->delivery_id)
-                    && $contract->maid_category != StockCategory::DWD_PACKAGEONE
+                    && $contract->category_id != StockCategory::DWD_PACKAGEONE
                 );
             })
             ->addColumn('_isInstallmentDeletable', function($contract) use ($user) {
