@@ -1,0 +1,1 @@
+ALTER TABLE `0_debtor_trans` ADD payment_ref VARCHAR(35) NULL DEFAULT NULL AFTER payment_method;

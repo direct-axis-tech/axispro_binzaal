@@ -1,0 +1,4 @@
+If logs are required this directory should have write permisssion by the user executing this script
+There should be one file with a secret key named 'secret_key.php' which should return the 'secret_key' and only 'secret_key';
+This secret_key is shared between the client[getdata_sql.php] and the server[sync.php];
+Once the secret key is created this must be used in getdata_sql.php at line 86 when sending POST request to the server

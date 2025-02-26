@@ -1,0 +1,2 @@
+INSERT INTO `0_dimensions` (id,reference,name,gst_no,invoice_prefix,has_service_request,has_token_filter,has_autofetch,type_,closed,date_,due_date) VALUES
+	 (13,'CC012','EJARI','','EJR',0,0,0,1,0,'2021-06-22','2021-06-22');

@@ -1,0 +1,55 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `0_attendance`
+--
+
+DROP TABLE IF EXISTS `0_attendance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `0_attendance` (
+  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `machine_id` VARCHAR(50) NOT NULL,
+  `date` DATE NOT NULL,
+  `status` char(1) NOT NULL COMMENT 'P:Present,A:Absent,O:Off',
+  `punchin` TIME NULL,
+  `punchout` TIME NULL,
+  `duration` TIME NULL,
+  `remarks` VARCHAR(255) NULL,
+  `reviewed_by` SMALLINT(6) NULL,
+  `reviewed_at` TIMESTAMP NULL,
+  INDEX(`machine_id`) USING HASH,
+  INDEX(`date`) USING BTREE,
+  CONSTRAINT uid_attendance UNIQUE (`machine_id`, `date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- -- REVERSE
+-- CREATE TABLE `0_attendance` (
+--   `emp_id` int(11) NOT NULL,
+--   `overtime_id` int(11) NOT NULL,
+--   `hours_no` float NOT NULL DEFAULT 0,
+--   `rate` float NOT NULL DEFAULT 1,
+--   `att_date` date NOT NULL,
+--   PRIMARY KEY (`emp_id`,`overtime_id`,`att_date`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

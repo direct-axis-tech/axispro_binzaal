@@ -1,0 +1,1 @@
+ALTER TABLE `0_emp_leaves` ADD `created_by` SMALLINT(6) NULL DEFAULT NULL AFTER `memo`;

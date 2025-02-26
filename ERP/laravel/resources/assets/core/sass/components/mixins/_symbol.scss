@@ -1,0 +1,35 @@
+//
+// Symbol
+//
+
+@mixin symbol-size($size) {
+    & {
+        width: $size;
+        height: $size;
+        overflow: hidden;
+    }
+
+    > img {
+        width: 100%;
+    }
+
+    .symbol-label {
+        width: $size;
+        height: $size;
+    }
+
+    &.symbol-fixed {
+        .symbol-label {
+            width: $size;
+            height: $size;
+        }
+    }
+
+    // Ratios
+    &.symbol-2by3 {
+        .symbol-label {
+            height: $size;
+            width:  $size * divide(3, 2);
+        }
+    }
+}

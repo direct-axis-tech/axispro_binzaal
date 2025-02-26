@@ -1,0 +1,1 @@
+ALTER TABLE `0_pay_elements` DROP INDEX uniq_type, DROP `for`;

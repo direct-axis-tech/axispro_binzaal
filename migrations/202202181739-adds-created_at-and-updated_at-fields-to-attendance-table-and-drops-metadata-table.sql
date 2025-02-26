@@ -1,0 +1,2 @@
+ALTER TABLE `0_attendance` ADD `created_at` TIMESTAMP NULL DEFAULT NULL, ADD `updated_at` TIMESTAMP NULL DEFAULT NULL;
+DROP TABLE `0_metadata`;

@@ -1,0 +1,1 @@
+ALTER TABLE `0_security_roles` MODIFY `role` VARCHAR(50) NOT NULL;

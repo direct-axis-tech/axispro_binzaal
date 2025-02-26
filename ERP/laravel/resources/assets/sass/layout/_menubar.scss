@@ -1,0 +1,122 @@
+//
+// Menubar
+//
+
+// General mode
+.menubar {
+    display: flex;
+    align-items: center;
+    background-color: get($menubar-config, bg-color);
+    padding: get($menubar-config, padding);
+    color: get($menubar-config, color);
+}
+
+.menubar-menu {
+    background-color: get($menubar-config, bg-color);
+    color: get($menubar-config, color);
+}
+
+.menubar-positioned {
+    position: relative;
+}
+
+// Desktop mode
+@include media-breakpoint-up(xl) {
+    .menubar {
+        // Fixed menubar
+        .menubar-fixed &,
+        .menubar-positioned & {
+			height: var(--kt-menubar-height);
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: get($menubar-config, z-index);			
+            box-shadow: get($menubar-config, box-shadow);
+        }
+
+        .menubar-fixed & {
+            position: fixed;
+        }
+
+        .menubar-positioned & {
+            position: absolute;
+        }
+
+		// menubar enabled & menubar not fixed modes
+		.menubar-enabled:not(.menubar-fixed) & {
+			margin-bottom: get($content-spacing, desktop);
+		}
+
+        // Fixed header & fixed menubar modes
+        .header-fixed.menubar-fixed &,
+        .header-positioned.menubar-positioned & {
+            padding: 0;
+            top: get($header-config, fixed, height, desktop);
+            border-top: get($menubar-config, border-top);
+        }
+
+        // Aside default enabled, aside fixed & header sticky modes
+		.aside-enabled.aside-fixed.menubar-fixed & {
+			left: get($aside-config, width);
+			transition: left get($aside-config, transition-speed) ease;
+		}
+
+		// Aside default enabled, aside header sticky & aside minimize modes
+		.aside-enabled.aside-fixed.menubar-fixed[data-kt-aside-minimize="on"] & {
+			left: get($aside-config, minimized-width);
+			transition: left get($aside-config, transition-speed) ease;
+		}
+
+        // Header menu
+		.menubar-menu {
+			display: flex;
+		}
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(xl) {
+    .menubar {
+        // Fixed menubar mode
+        .menubar-tablet-and-mobile-fixed &,
+        .menubar-tablet-and-mobile-positioned & {
+			height: var(--kt-menubar-height-tablet-and-mobile);
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: get($menubar-config, z-index);
+            box-shadow: get($menubar-config, box-shadow);
+        }
+
+        .menubar-tablet-and-mobile-fixed & {
+            position: fixed;
+        }
+
+        .menubar-tablet-and-mobile-positioned & {
+            position: absolute;
+        }
+
+        // menubar enabled & menubar not fixed modes
+		.menubar-enabled:not(.menubar-tablet-and-mobile-fixed) & {
+			margin-bottom: get($content-spacing, tablet-and-mobile);
+		}
+
+        // Fixed header & fixed menubar modes
+        .header-tablet-and-mobile-fixed.menubar-tablet-and-mobile-fixed &,
+        .header-tablet-and-mobile-positioned.menubar-tablet-and-mobile-positioned & {
+            padding: 0;
+			top: get($header-config, default, height, tablet-and-mobile);
+            border-top: get($menubar-config, border-top);
+        }
+
+        .menubar-menu {
+			display: none;
+			z-index: get($header-config, fixed, z-index) - 1;
+		}
+
+        // Page title
+		.page-title[data-kt-swapper="true"] {
+			display: none !important;
+		}
+    }
+}

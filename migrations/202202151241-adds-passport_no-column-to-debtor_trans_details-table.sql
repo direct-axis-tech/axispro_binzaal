@@ -1,0 +1,2 @@
+ALTER TABLE `0_debtor_trans_details` ADD passport_no VARCHAR(25) NULL DEFAULT NULL AFTER application_id;
+ALTER TABLE `0_sales_order_details` ADD passport_no VARCHAR(25) NULL DEFAULT NULL AFTER application_id;

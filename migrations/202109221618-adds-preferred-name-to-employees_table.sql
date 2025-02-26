@@ -1,0 +1,1 @@
+ALTER TABLE `0_employees` ADD `preferred_name` VARCHAR(60) NULL DEFAULT NULL AFTER `name`;

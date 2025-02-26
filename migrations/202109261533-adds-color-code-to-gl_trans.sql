@@ -1,0 +1,1 @@
+ALTER TABLE `0_gl_trans` ADD color_code CHAR(7) NULL DEFAULT NULL AFTER reconciled;

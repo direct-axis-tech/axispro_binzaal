@@ -1,0 +1,1 @@
+ALTER TABLE `0_users` ADD allowed_dims varchar(255) DEFAULT '' NOT NULL;

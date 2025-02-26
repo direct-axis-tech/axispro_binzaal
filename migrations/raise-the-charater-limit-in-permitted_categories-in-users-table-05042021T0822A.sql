@@ -1,0 +1,1 @@
+ALTER TABLE `0_users` MODIFY COLUMN permitted_categories varchar(255) NULL DEFAULT NULL;

@@ -1,0 +1,4 @@
+ALTER TABLE `0_dimensions`
+    MODIFY date_ DATE NOT NULL DEFAULT '1971-01-01',
+    MODIFY due_date DATE NOT NULL DEFAULT '1971-01-01';
+ALTER TABLE `0_dimensions` ADD pos_type SMALLINT NOT NULL DEFAULT 1 AFTER invoice_prefix;

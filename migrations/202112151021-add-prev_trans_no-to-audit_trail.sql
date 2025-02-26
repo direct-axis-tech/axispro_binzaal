@@ -1,0 +1,3 @@
+ALTER TABLE `0_audit_trail`
+    MODIFY gl_date DATE NOT NULL DEFAULT '1971-01-01',
+    ADD `prev_trans_no` INT(11) UNSIGNED NULL DEFAULT NULL AFTER trans_no;

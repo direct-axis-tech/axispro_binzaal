@@ -1,0 +1,42 @@
+body , .container-fluid .right:hover, #nav ul li a.active, #nav ul li:hover a, .tableheader, #CC .header, #CC .current, #CC .weekday:hover, #CC .weekend:hover, #CC .current:hover{
+	background: #009688;
+}
+
+#nav ul li a.active, #nav ul li:hover a { color : #fff;  }
+.wrapper{ box-shadow: 0px 0px 20px #025a52; } 
+#nav ul li a:hover, #nav ul li a.active {
+    border-left: 5px solid #00564e;
+}
+html[dir="rtl"] #nav ul li a:hover, html[dir="rtl"] #nav ul li a.active{
+	border-right: 5px solid #00564e;
+	border-left: 0px;
+}
+.card-header {  background: #009688; } 
+
+::-webkit-scrollbar-track {
+   // background: #009688;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*background: #009688;*/
+    /*border: 1px solid #009688;*/
+}
+
+.tableheader { 
+	color : #fff;
+}
+a:hover, a:focus {
+	color: #009688;
+}
+a.right:hover, #CC table tr.header td, #CC table tr.header td a, #CC .weekday:hover, #CC .weekend:hover, #CC .current:hover{
+	color: #fff;
+}
+.sidebar .logo a {
+	color: #009688;
+}
+table.tablestyle td.tableheader{
+	color: #fff;
+	background: #009688;
+}
+.subHeaders {	background: #009688;  color: #fff;} 

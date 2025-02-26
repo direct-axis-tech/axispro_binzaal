@@ -1,0 +1,111 @@
+/*progressbar*/
+#progressbar {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 20%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    z-index: 1; /* bring to front */
+    background: grey;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: grey;
+    position: absolute;
+    left: -50%;
+    top: 10px;
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #5867dd;
+    color: white;
+}
+
+#control-area * {
+    display: inline-block;
+}
+
+#previous {
+    display: none;
+}
+
+.stages {
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+.stage:not(:first-of-type){
+    display: none;
+    opacity: 0;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #5867dd;
+}
+
+.is-valid .form-control,
+.is-valid .custom-select,
+.is-valid .validate {
+    border-color: #28a745;
+}
+
+.is-invalid .form-control,
+.is-invalid .custom-select,
+.is-invalid .validate {
+    border-color: #dc3545;
+}

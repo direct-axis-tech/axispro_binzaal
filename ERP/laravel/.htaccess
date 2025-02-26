@@ -1,0 +1,9 @@
+<IF "%{REQUEST_URI} =~ m#(/v3)#">
+    Require all granted
+</IF>
+<Elseif "%{REQUEST_URI} !~ m#(/laravel)#">
+    Require all granted
+</Elseif>
+<Else>
+    Require all denied
+</Else>

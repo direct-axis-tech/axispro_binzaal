@@ -1,0 +1,1 @@
+ALTER TABLE `0_emp_jobs` ADD `work_hours` DECIMAL(4,2) NOT NULL DEFAULT 8 AFTER week_offs;

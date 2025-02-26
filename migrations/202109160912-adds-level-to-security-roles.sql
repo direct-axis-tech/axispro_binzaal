@@ -1,0 +1,1 @@
+ALTER TABLE `0_security_roles` ADD `level` INT(4) NOT NULL DEFAULT 10 AFTER `description`;

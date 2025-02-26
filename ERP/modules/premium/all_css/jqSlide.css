@@ -1,0 +1,81 @@
+.slide-navbar{
+  float: left;
+  padding: 10px 0;
+  clear: both;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  
+}
+.slide-navbar > li {
+  display: inline;
+  border-right:1px solid #77b2d4;
+  background: #3c8dbc;
+  padding: 73px;
+  cursor: pointer;
+  color:#fff;
+}
+.active-tab{
+  background:#77b2d4 !important;
+}
+.slider-container{
+    
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  color:#000;
+  -webkit-transition:all 0.6s ease-in-out;
+      -ms-transition:all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
+}
+.slider-container > div{
+  display: block;
+  float: left;
+  background-color: #fff;
+
+}
+.slider-wrapper {
+  background: #fff;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  border-top: 3px solid #77b2d4;
+  border-left: 1px solid #77b2d4;
+  border-right: 1px solid #77b2d4;
+  border-bottom: 1px solid #77b2d4;
+
+}
+.slider-container p{
+  padding : 3%;
+}
+.select-slider {
+  display: none;
+  width: 100%;
+  height: 40px;
+  background-color: #E74C3C;
+  overflow: hidden;
+ /* border-bottom: 1px solid #fdfdfd;*/
+}
+.select-slider select{
+   cursor: pointer;
+  background-color:#3C8DBC;
+   font-size: 20px; 
+   color:#FFF;
+   height: 40px;
+  
+ 
+ 
+}
+/*
+  Switching between select-slider and tab-slider
+*/
+@media screen and (max-width:768px){
+  .select-slider{
+    display: block;
+  }
+  .tab-slider{
+    display: none;
+  }
+}

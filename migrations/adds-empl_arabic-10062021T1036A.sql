@@ -1,0 +1,1 @@
+ALTER TABLE `0_kv_empl_info` ADD empl_arabic varchar(50) NULL AFTER emp_code;

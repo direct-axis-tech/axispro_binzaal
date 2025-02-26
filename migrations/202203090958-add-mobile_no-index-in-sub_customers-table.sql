@@ -1,0 +1,1 @@
+ALTER TABLE `0_sub_customers` ADD INDEX mobile_no (mobile);

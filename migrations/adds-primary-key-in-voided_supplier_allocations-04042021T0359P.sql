@@ -1,0 +1,1 @@
+ALTER TABLE `0_voided_supp_allocations` DROP INDEX id, ADD `_id` BIGINT UNSIGNED auto_increment NOT NULL PRIMARY KEY FIRST;

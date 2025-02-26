@@ -1,0 +1,82 @@
+#amc-notification-modal {
+    & {
+        font-size: 13px;
+        font-weight: 500;
+        font-family: Poppins, Helvetica, sans-serif;
+    }
+
+    .modal-body {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+        z-index: 1051;
+
+        .expiry-msg {
+            margin: 19.5px 0;
+            font-size: 19.5px;
+            color: #4e4e4e;
+        }
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    button {
+        position: relative;
+        padding: 4px 35px;
+        line-height: 30px;
+        overflow: hidden;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(3, 169, 244, 0.43);
+        background-color: #f68e09;
+        color: #ecf0f1;
+        font-weight: bold;
+        font-size: 1.125rem;
+        transition: background-color .3s;
+    }
+}
+
+.amc-expiry-marquee {
+    & {
+        display: block;
+        max-width: 100%;
+        font-weight: 500;
+        font-size: 19.5px;
+        color: #dd1717;
+        overflow: hidden;
+    }
+
+    .marquee-container {
+        display: flex;
+        width: max-content;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .marquee-item {
+        display: block;
+        width: 50%;
+        animation: animate-marquee 25s linear infinite;
+        white-space: nowrap;
+    }
+
+    .marquee-item:first-of-type {
+        padding-right: 300px;
+    }
+
+    &:hover .marquee-item {
+        animation-play-state: paused;
+    }
+
+    @keyframes animate-marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+}

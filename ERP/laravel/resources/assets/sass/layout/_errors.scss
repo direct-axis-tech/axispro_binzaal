@@ -1,0 +1,33 @@
+.error-wrapper {
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: if(isDarkMode(), $dark, $light);
+    color: if(isDarkMode(), $light, $dark);
+    font-weight: 100;
+
+    & .error-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .code {
+        border-right: 2px solid;
+        font-size: 26px;
+        padding: 0 15px 0 15px;
+        text-align: center;
+    }
+
+    & .message {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+}

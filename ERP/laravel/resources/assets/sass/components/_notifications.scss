@@ -1,0 +1,49 @@
+.notification-wrapper {
+    .notification-icon {
+        &:not([data-unread-notifications="0"]) {
+            position: relative;
+
+            &, &:hover {
+                color: $white;
+                background-color: $primary-light;
+            }
+
+            .svg-icon svg [fill]:not(.permanent):not(g) {
+                fill: $primary;
+            }
+            
+            &:before {
+                content: attr(data-unread-notifications);
+                position: absolute;
+                font-size: 1rem;
+                line-height: 0.5;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                top: -0.5rem;
+                min-width: 1.5rem;
+                transform: translateX(-100%);
+                left: calc(100% + 0.3rem);
+                background-color: $orange;
+            }
+        }
+    }
+
+    .notification-item {
+        &.read {
+            opacity: 0.5;
+        }
+
+        .notification-action {
+            float: right /* rtl:left */;
+            font-size: map-get($font-sizes, 9);
+            margin: map-get($spacers, 1) map-get($spacers, 1) 0;
+            padding: map-get($spacers, 1) map-get($spacers, 2) !important;
+            border-radius: $border-radius-sm;
+        }
+    }
+
+    .notifications {
+        position: relative;
+        padding: map-get($map: $spacers, $key: 3) 0;
+    }
+}

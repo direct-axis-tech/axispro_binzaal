@@ -1,0 +1,11 @@
+/readme.txt: bd3b494f6328d21089410359406af2e5d6e28556
+/tax_inquiry_cash.php: 885ddb998f43d990489ab067c510126d529cd3c0
+/includes/tax_cash_db.inc: 6beb5df8f42cbe9d669d02fed1ccf3731366cf5e
+/includes/index.php: ecaa5f0560883d40dc7508073f57abef01cb438b
+/hooks.php: 3956a358ca9de5c214e0c2d70e7e63681a4098c8
+/_init/config: efb875b4b0595f417245a6510fa9957f7c3fd54a
+/reporting/reports_custom.php: a8faf9c3b68aed173e4b112005a924c103d6dde6
+/reporting/rep_tax_details_cash.php: af7ffa0ab3c7308829ab2ce03f9344bec18d80ac
+/reporting/index.php: ecaa5f0560883d40dc7508073f57abef01cb438b
+/index.php: ecaa5f0560883d40dc7508073f57abef01cb438b
+

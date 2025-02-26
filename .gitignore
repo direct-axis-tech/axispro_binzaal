@@ -1,0 +1,15 @@
+config.php
+assets/js/config.js
+ERP/config.php
+ERP/config_db.php
+ERP/custom_reports/ewcfg14.php
+ERP/company/0/js_cache/
+ERP/company/0/attachments/
+ERP/company/0/backup/
+ERP/company/0/pdf_files/
+.idea
+ERP/vendor
+.vscode
+v3
+.history
+.DS_Store

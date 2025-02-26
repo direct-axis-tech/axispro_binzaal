@@ -1,0 +1,42 @@
+body , .container-fluid .right:hover, #nav ul li a.active, #nav ul li:hover a, .tableheader, #CC .header, #CC .current, #CC .weekday:hover, #CC .weekend:hover, #CC .current:hover{
+	background: #eceeed;
+}
+
+#nav ul li a:hover,#nav ul li a.active{
+	border-left: 5px solid #711172;
+}
+
+html[dir="rtl"] #nav ul li a:hover, html[dir="rtl"] #nav ul li a.active{
+	border-right: 5px solid #711172;
+	border-left: 0px;
+}
+ #CC .header, #CC .header a,  #CC .current, #CC .weekday:hover, #CC .weekend:hover, #CC .current:hover, #CC .title , #CC .previous a, #CC .next a{
+	 color: #000;
+ }
+#nav ul li a.active, #nav ul li:hover a { color : #711172;  }
+.wrapper{ box-shadow: 0px 0px 20px #abadad; } 
+.card-header {  background: #711172; } 
+
+::-webkit-scrollbar-track {
+    background: #e8ede6;
+	/*border: 4px solid transparent;*/
+	background-clip: content-box;   /* this is important*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border: 1px solid #cccccc;
+}
+a:hover, a:focus {
+	color: #711172;
+}
+.sidebar .logo a {
+	color: #0683bb;
+}
+table.tablestyle td.tableheader{
+	color: #6b6565;
+	background-color: #f3f3f3 !important
+}
+
+.subHeaders {	background: #711172; color :#fff; } 

@@ -1,0 +1,1 @@
+ALTER TABLE `0_debtor_trans` ADD credit_card_no CHAR(4) NULL DEFAULT NULL AFTER credit_card_charge;

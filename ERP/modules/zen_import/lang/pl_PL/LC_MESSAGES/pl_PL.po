@@ -1,0 +1,232 @@
+# Front Accounting internationalization file.
+# Copyright (C) 2007-2011 Front Accounting Team
+# This file is distributed under the same license as the Front Accounting package.
+# Janusz Dobrowolski <janusz@frontaccounting.eu>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-29 11:39+0100\n"
+"Last-Translator: Janusz Dobrowolski <janusz@frontaccounting.eu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: hooks.php:15
+#: hooks.php:22
+#: hooks.php:24
+#: zencart.php:542
+msgid "Import Zen Cart Orders"
+msgstr "Import zamówieñ z Zen Cart"
+
+#: zencart.php:62
+msgid "You must first define at least one Sales Area"
+msgstr "Musisz wprowadziæ co najmniej jeden Rejon Sprzeda¿y."
+
+#: zencart.php:87
+msgid "Failed to connect to Zen Cart Database"
+msgstr "Nie mo¿na siê po³±czyæ z baz± danych Zen Cart"
+
+#: zencart.php:173
+#, php-format
+msgid "Found %d new customers"
+msgstr "Znaleziono %d nowych klientów"
+
+#: zencart.php:238
+#, php-format
+msgid "%d customer posts created, %d customer posts updated."
+msgstr "Utworzono %d nowych klientów, zmieniono %d danych klientów."
+
+#: zencart.php:251
+#, php-format
+msgid "Found %d New Orders"
+msgstr "Znaleziono %d nowych zamówieñ"
+
+#: zencart.php:274
+#, php-format
+msgid "Customer '%s' not found"
+msgstr "Klient '%s' nie zosta³ znaleziony."
+
+#: zencart.php:334
+#, php-format
+msgid "Added Order Number %d"
+msgstr "Dodano zamówienie %d"
+
+#: zencart.php:355
+#: zencart.php:374
+#, php-format
+msgid "'%s' price not found in FA"
+msgstr "Nie znaleziono ceny dla '%s' w bazie FrontAccounting"
+
+#: zencart.php:357
+#, php-format
+msgid "'%s' Prices do not match - FA: %s zen: %s"
+msgstr "Niezgodno¶æ cen dla '%s'- FA: %s zen: %s"
+
+#: zencart.php:376
+#, php-format
+msgid "Updating '%s' from %s to %s"
+msgstr "Aktualizacja dla '%s' z %s na %s"
+
+#: zencart.php:409
+msgid "Zen Cart Interface"
+msgstr "Interfejs Zen Cart"
+
+#: zencart.php:414
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+#: zencart.php:417
+msgid "&Customer Import"
+msgstr "Import &Klientów"
+
+#: zencart.php:420
+msgid "&Order Import"
+msgstr "Import &Zamówieñ"
+
+#: zencart.php:436
+msgid "Function"
+msgstr "Funkcja"
+
+#: zencart.php:436
+msgid "Description"
+msgstr "Opis"
+
+#: zencart.php:443
+msgid "Table Status"
+msgstr "Interfejs"
+
+#: zencart.php:444
+msgid "Found"
+msgstr "Znaleziony"
+
+#: zencart.php:445
+msgid "Not Found"
+msgstr "Nie znaleziony"
+
+#: zencart.php:449
+msgid "Mysql Host"
+msgstr "Host MySQL"
+
+#: zencart.php:451
+msgid "User"
+msgstr "U¿ytkownik"
+
+#: zencart.php:453
+msgid "Password"
+msgstr "Has³o"
+
+#: zencart.php:455
+msgid "ZenCart DB Name"
+msgstr "Nazwa bazy"
+
+#: zencart.php:456
+#: zencart.php:507
+msgid "Default Tax Group:"
+msgstr "Domy¶³na Grupa Podatkowa:"
+
+#: zencart.php:478
+msgid "Default GL Accounts"
+msgstr "Domy¶³ne Konta KG"
+
+#: zencart.php:494
+msgid "Sales Account:"
+msgstr "Konto Sprzeda¿y:"
+
+#: zencart.php:495
+msgid "Sales Discount Account:"
+msgstr "Konto Upustów:"
+
+#: zencart.php:496
+msgid "Receivables Account:"
+msgstr "Konto Nale¿no¶ci:"
+
+#: zencart.php:497
+msgid "Payment Discount Account:"
+msgstr "Konto Upustów z Tytu³u Przedp³aty:"
+
+#: zencart.php:505
+msgid "Location, Tax Type, Sales Type, Sales Person and Payment Terms"
+msgstr "Inne Ustawienia Sprzeda¿y"
+
+#: zencart.php:506
+msgid "Location:"
+msgstr "Magazyn:"
+
+#: zencart.php:508
+#: zencart.php:558
+#: zencart.php:582
+msgid "Sales Type:"
+msgstr "Typ Sprzeda¿y:"
+
+#: zencart.php:509
+msgid "Sales Person:"
+msgstr "Sprzedawca:"
+
+#: zencart.php:510
+msgid "Sales Area:"
+msgstr "Rejon Sprzeda¿y:"
+
+#: zencart.php:511
+#: zencart.php:557
+#: zencart.php:581
+msgid "Customer Currency:"
+msgstr "Waluta Klienta:"
+
+#: zencart.php:512
+msgid "Payment Terms:"
+msgstr "Warunki P³atno¶ci:"
+
+#: zencart.php:514
+#: zencart.php:516
+msgid "Dimension"
+msgstr "Przekrój"
+
+#: zencart.php:517
+msgid "Starting Zen Cart Customer ID:"
+msgstr "Pierwszy ID klienta Zen Cart"
+
+#: zencart.php:518
+msgid "Ending Zen Cart Customer ID:"
+msgstr "Ostatni ID klienta Zen Cart"
+
+#: zencart.php:523
+msgid "Import Zen Cart Customers"
+msgstr "Importuj Klientów"
+
+#: zencart.php:534
+msgid "Order Import Options"
+msgstr "Ustawienia Importu Zamówieñ"
+
+#: zencart.php:536
+msgid "Starting Order Number:"
+msgstr "Pierwszy Numer Zamówienia:"
+
+#: zencart.php:537
+msgid "Last Order Number:"
+msgstr "Ostatni Numer Zamówienia:"
+
+#: zencart.php:553
+msgid "Price Check Options"
+msgstr "Opcje Sprawdzania Cen"
+
+#: zencart.php:563
+msgid "Check Zen Cart Prices"
+msgstr "Sprawd¼ Ceny Zen Cart"
+
+#: zencart.php:564
+msgid "No Pricing Errors Found"
+msgstr "Nie stwierdzono ró¿nic w cennikach"
+
+#: zencart.php:568
+msgid "Refresh"
+msgstr "Od¶wie¿"
+
+#: zencart.php:577
+msgid "Update Price Options"
+msgstr "Opcje Aktualizacji Cen"
+
+#: zencart.php:587
+msgid "Update Zen Cart Prices"
+msgstr "Aktualizuj Ceny Zen Cat"

@@ -1,0 +1,9 @@
+<Files "*.inc">
+	Require all denied
+</Files>
+<Files "conf*.php">
+	Require all denied
+</Files>
+<Files "*.env">
+	Require all denied
+</Files>

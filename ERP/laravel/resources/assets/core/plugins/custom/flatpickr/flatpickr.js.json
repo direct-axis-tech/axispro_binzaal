@@ -1,0 +1,4 @@
+[
+    "node_modules/flatpickr/dist/flatpickr.js",
+    "resources/assets/core/js/init/flatpickr.init.js"
+]

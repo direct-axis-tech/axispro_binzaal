@@ -1,0 +1,158 @@
+@import './init';
+
+// Bootstrap Layouts
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/placeholders";
+
+// Bootstrap helpers
+@import "~bootstrap/scss/helpers";
+
+// Bootstrap utilities
+@import '../core/sass/components/utilities';
+@import "~bootstrap/scss/utilities/api";
+
+// Additional theme components
+@import "../core/sass/components/root";
+@import "../core/sass/components/helpers";
+@import "../core/sass/components/nav";
+@import "../core/sass/components/menu";
+@import "../core/sass/components/tooltip";
+@import "../core/sass/components/symbol";
+@import "../core/sass/components/drawer";
+@import "../core/sass/components/scroll";
+
+// Application specific
+@import './layout/wrapper';
+@import './layout/header';
+@import './layout/toolbar';
+@import './layout/menubar';
+@import './components/notifications';
+@import './common';
+
+#ajaxmark[style*="visibility: visible"]+.ajax-blocker {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2024;
+}
+
+.select2-container--default .select2-selection--single button.select2-selection__clear {
+    box-shadow: none;
+    line-height: 1.5;
+    color: grey;
+    margin-right: 1.75rem;
+    padding: 0.65rem 0.5rem;
+}
+
+#_page_body .select2-selection__arrow b {
+    padding-left: 0;
+}
+
+#kt_body {
+    .swal2-popup .swal2-icon {
+        margin: 2.5em auto 0.6em;
+    }
+
+    .menu .menu-item {
+        line-height: 1.5;
+    }
+}
+
+.notification-wrapper .notification-icon {
+    .svg-icon svg [fill]:not(.permanent):not(g) {
+        fill: $gray-500;
+    }
+
+    &:hover {
+        color: $white;
+        background-color: $primary-light;
+
+        .svg-icon svg [fill]:not(.permanent):not(g) {
+            fill: $primary;
+        }
+    }
+}
+
+tr.header {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    height: auto;
+}
+
+.custom-select:disabled {
+    background-color: $input-disabled-bg;
+}
+
+.modal .modal-content .modal-header .close {
+    font-family: "Line Awesome Free";
+
+    &::before {
+        content: "\f00d";
+    }
+}
+
+.form-control:disabled {
+    &, &[readonly] {
+        background-color: $input-disabled-bg;
+        opacity: 1;
+    }
+}
+
+// Cell gutters
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $name, $value in $gutters {
+			table.g#{$infix}-#{$name} {
+				th, td {
+					padding: $value;
+
+					// Datatables responsive mode fix
+					&.dtr-control {
+						padding-left: $value !important;
+					}
+				}
+            }
+
+            table.gy#{$infix}-#{$name} {
+				th, td {
+					padding-top: $value;
+					padding-bottom: $value;
+				}
+            }
+
+			table.gx#{$infix}-#{$name} {
+				th, td {
+					padding-left: $value;
+					padding-right: $value;
+
+					// Datatables responsive mode fix
+					&.dtr-control {
+						padding-left: $value !important;
+					}
+				}
+            }
+
+			table.gs#{$infix}-#{$name} {
+				 th, td {
+					&:first-child {
+	   					padding-left: $value;
+					}
+
+					&:last-child {
+	   					padding-right: $value;
+					}
+
+					// Datatables responsive mode fix
+					&.dtr-control:first-child {
+						padding-left: $value !important;
+					}
+				}
+            }
+        }
+    }
+}

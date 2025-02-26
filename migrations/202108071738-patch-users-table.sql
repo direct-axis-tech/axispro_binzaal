@@ -1,0 +1,1 @@
+ALTER TABLE `0_users` MODIFY `employee_id` BIGINT(8) NULL, ADD `type` TINYINT(1) DEFAULT 1 AFTER `user_id`;

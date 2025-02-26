@@ -1,0 +1,269 @@
+//
+// App Layout Variables
+//
+
+
+//// Page
+
+// Page container
+$app-page-container-config: (
+    padding-x: 1.5rem,
+    padding-x-lg: 2rem
+) !default;
+
+
+//// Header
+
+// Header base
+$app-header-config: (
+    default: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    fixed: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    sticky: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    )
+) !default;
+
+// Header primary
+$app-header-primary-config: (
+    default: (
+        height: 70px,
+        z-index: null,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    ),
+
+    fixed: (
+        height: 70px,
+        z-index: 101,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    ),
+
+    sticky: (
+        height: 70px,
+        z-index: 101,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    )
+) !default;
+
+// Header secondary
+$app-header-secondary-config: (
+    default: (
+        height: 70px,
+        z-index: null,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    ),
+
+    fixed: (
+        height: 70px,
+        z-index: 101,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    ),
+
+    sticky: (
+        height: 70px,
+        z-index: 101,
+        bg-color: null,
+        box-shadow: null,
+        border-bottom: null
+    )
+) !default;
+
+// Header mobile
+$app-header-mobile-config: (
+    default: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    fixed: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    sticky: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    )
+) !default;
+
+// Topbar
+$app-topbar-config: (
+    
+) !default;
+
+// Toolbar
+$app-toolbar-config: (
+    default: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-top: null,
+        border-top-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    fixed: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-top: null,
+        border-top-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    ),
+
+    sticky: (
+        height: 70px,
+        height-lg: 70px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-top: null,
+        border-top-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    )
+) !default;
+
+//// Aside
+
+// Aside base
+$app-aside-config: (
+    default: (
+        width: 250px,
+        width-lg: 300px,
+        z-index: null,
+        z-index-lg: null, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-right: null,
+        border-right-lg: null
+    ),
+
+    fixed: (
+        width: 250px,
+        width-lg: 300px,
+        z-index: 101,
+        z-index-lg: 101, 
+        bg-color: null,
+        bg-color-lg: null
+        box-shadow: null,
+        box-shadow-lg: null,
+        border-bottom: null,
+        border-bottom-lg: null
+    )
+) !default;
+
+// Aside Primary
+
+// Aside Secondary
+
+// Aside Tertiary
+
+
+//// Sidebar
+
+// Sidebar Base
+
+// Sidebar Primary
+
+// Sidebar Secondary
+
+// Sidebar Tertiary
+
+
+
+//// Content
+
+// Content Base
+
+
+//// Footer
+
+// Footer Base
+
+// Footer Primary
+
+// Footer Secondary

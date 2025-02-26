@@ -1,0 +1,2 @@
+ALTER TABLE `0_payrolls` ADD processed_at TIMESTAMP NULL DEFAULT NULL;
+ALTER TABLE `0_payslips` ADD processed_at TIMESTAMP NULL DEFAULT NULL AFTER processed_by;

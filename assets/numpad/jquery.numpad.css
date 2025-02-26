@@ -1,0 +1,5 @@
+.nmpd-wrapper {display: none;}
+.nmpd-target {cursor: pointer !important;}
+.nmpd-grid {position:absolute; left:500px !important; top:200px !important; z-index:5000 !important; -khtml-user-select: none !important; padding:5px !important; width: initial !important;border:solid 1px black !important;}
+.nmpd-overlay {z-index:4999; background:transparent !important;}
+input.nmpd-display {text-align: right !important;font-size:15px;font-weight:bold;color:#000;border:solid 1px black!important;}

@@ -1,0 +1,36 @@
+.is-valid {
+    .form-control,
+    .custom-select,
+    .form-select,
+    .parsley-indicator {
+        &, &:focus {
+            border-color: #28a745 !important;
+        }
+    }
+}
+
+.is-invalid {
+    .form-control,
+    .custom-select,
+    .form-select,
+    .parsley-indicator {
+        &, &:focus {
+            border-color: #dc3545 !important;
+        }
+    }
+}
+
+.errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    color: #dc3545;
+    transition: all 0.3s ease-in;
+}
+
+.errors-list.filled {
+    opacity: 1;
+}
